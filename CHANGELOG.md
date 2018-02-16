@@ -27,6 +27,7 @@ except that HookConfig is now embedded in Hook.
 - Refactor CheckExecutor and AdhocRequestExecutor into an Executor interface.
 - Changed the sensu-backend etcd flag constants to match the etcd flag names.
 - Upgraded to Etcd v3.3.1
+- Agent backend URLs without a port specified will now default to port 8081.
 
 ### Fixed
 - Fixed a bug in time.InWindow that in some cases would cause subdued checks to
